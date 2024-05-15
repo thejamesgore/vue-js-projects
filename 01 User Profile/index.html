@@ -8,9 +8,19 @@
   </head>
   <body>
     <div id="app">
+      <!-- v-bind: directive needs to be used when using data from app.js in imag tag as well as other tags-->
+      <!-- short cut to writing v-bind is by using : before example below would be class in img tag -->
+      <img
+        v-bind:src="photo"
+        v-bind:alt="`${firstName} ${lastName}`"
+        :class="gender"
+      />
+      />
       <!-- Declarative rendering is similar to interpolation in React -->
       <!-- You use double curly braces to pass data that's been declared in the app.js file -->
-      <h1>Hello {{firstName}}</h1>
+      <h1>{{firstName}} {{lastName}}</h1>
+      <h3>Email: {{email}}</h3>
+      <button :class="gender">Generate new user</button>
     </div>
     <script src="https://unpkg.com/vue@3.0.5"></script>
     <script src="app.js"></script>
