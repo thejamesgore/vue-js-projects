@@ -20,8 +20,12 @@
       <h1>{{firstName}} {{lastName}}</h1>
       <h3>Email: {{email}}</h3>
 
-      <button :class="gender" v-on:click="getUser()">Generate new user</button
+      <button :class="gender" v-on:click="getUser()">
+        Generate female user</button
       ><!-- interacting with elements you can use the v-on:-->
+      <button :class="gender" v-on:click="getRandomUser()">
+        Generate random user
+      </button>
     </div>
     <script src="https://unpkg.com/vue@3.0.5"></script>
     <script src="app.js"></script>
