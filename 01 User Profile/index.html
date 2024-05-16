@@ -15,12 +15,13 @@
         v-bind:alt="`${firstName} ${lastName}`"
         :class="gender"
       />
-      />
       <!-- Declarative rendering is similar to interpolation in React -->
       <!-- You use double curly braces to pass data that's been declared in the app.js file -->
       <h1>{{firstName}} {{lastName}}</h1>
       <h3>Email: {{email}}</h3>
-      <button :class="gender">Generate new user</button>
+
+      <button :class="gender" v-on:click="getUser()">Generate new user</button
+      ><!-- interacting with elements you can use the v-on:-->
     </div>
     <script src="https://unpkg.com/vue@3.0.5"></script>
     <script src="app.js"></script>
