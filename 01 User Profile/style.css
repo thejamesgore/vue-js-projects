@@ -35,12 +35,14 @@ img {
 .male {
     border-color: steelblue;
     background-color: steelblue;
+    margin: 5px 5px;
 }
 
 .female {
     border-color: pink;
     background-color: pink;
     color: #333;
+    margin: 5px 5px;
 }
 
 button {
