@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "rules": {
+        // Disable all eslint rules for .vue files
+        "vue/*": "off"
+      }
+    }
+  ]
+}
